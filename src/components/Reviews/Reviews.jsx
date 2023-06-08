@@ -1,0 +1,26 @@
+import PropTypes from 'prop-types';
+import styles from './Revies.module.css';
+const Reviews = ({ array }) => (
+  <>
+    {array.map(({ author, content, id, updated_at }) => (
+      <article className={styles.coment} key={id}>
+        <h3>{author}</h3>
+        <b>{updated_at}</b>
+        <p>{content}</p>
+      </article>
+    ))}
+  </>
+);
+
+Reviews.propTypes = {
+  array: PropTypes.arrayOf(
+    PropTypes.shape({
+      author: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      updated_at: PropTypes.string.isRequired,
+    })
+  ),
+};
+
+export default Reviews;

@@ -1,0 +1,35 @@
+.card__info_general {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.img_wrapper {
+  margin-right: 20px;
+}
+
+.img_wrapper img {
+  display: block;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.details_wrapper {
+  flex: 1;
+}
+
+.card_info_additional {
+  margin-top: 20px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

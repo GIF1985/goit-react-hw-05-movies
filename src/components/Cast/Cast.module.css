@@ -1,0 +1,36 @@
+.cast {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.castList {
+  list-style: none;
+  padding: 0;
+}
+
+.castListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.castListItemAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 8%;
+  margin-right: 16px;
+}
+
+.castListItemText {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.castListItemText p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.castListItemText p:first-child {
+  font-weight: bold;
+}
